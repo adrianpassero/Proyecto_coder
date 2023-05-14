@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Exo:wght@100&family=Fruktur&family=Nanum+Myeongjo:wght@400;700&family=Permanent+Marker&family=Rajdhani&family=Schibsted+Grotesk:ital,wght@1,500;1,900&family=Sedgwick+Ave+Display&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* ==================== BODY =====================*/
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 4.5rem;
+    color: white;
+    margin: 1rem;
+}
+
+
+.nav_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_contenedor {
+    padding: .2rem;
+}
+
+.nav_link {
+    margin: 0 1rem;
+    padding: .2rem;
+    font-size: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.nav_link:hover{
+    background-color:#5c6b73
+}
+
+
+/* ================================= FOOTER ========== */
+
+
+.footer_contenedor {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer_logo {
+    width: 3%;
+    padding: .5rem;
+    margin: 0 .5rem;
+}
+
+
+/*================================== MAIN PAG CARTA RESTO ===============*/
+
+
+.img_carta_resto {
+    width: 100%;
+}
+
+
+.promo_especial {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+.contenedor_promo {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.menu {
+    background-color: rgb(243, 248, 247);
+    width: 20rem;
+    padding: 1rem;
+    border-style: solid;
+    margin: 1rem;
+
+}
+
+.menu img {
+    width: 100%;
+}
+
+.menu h3 {
+    text-align: center;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_boton {
+    color: black;
+    background-color: steelblue;
+    border-radius: 10px;
+    padding: .2rem;
+}
+
+.contenedor_comprar {
+    padding: 0 1rem;
+}
+
+
+/*======================================== MAIN PAGINA CONTACTO =============*/
+
+.titulo_formulario{
+    margin: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+.formulario{
+    margin: 1rem;
+}
+
+.datos_personales, .texto_usuario{
+    margin: .5rem;
+}
+.mensaje{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: white;
+    border-color: white;
+}
+
+
+
+
+/*======================================== MAIN PAGINA NOVEDADES /// GRID  =========================*/
+
+
+.grid_contenedor {
+    display: grid;
+    align-items: center;
+    color: white;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-areas:
+        "imagen1 texto1"
+        "imagen2 texto2"
+        "imagen3 texto3"
+        "imagen4 texto4";
+}
+
+.grid_contenedor .imagen1 {
+    grid-area: imagen1;
+    margin: 2rem auto;
+}
+
+.grid_contenedor .texto1 {
+    grid-area: texto1;
+    margin: 5rem;
+}
+
+.grid_contenedor .imagen2 {
+    grid-area: imagen2;
+    margin: 2rem auto;
+}
+
+.grid_contenedor .texto2 {
+    grid-area: texto2;
+    margin: 5rem;
+}
+
+.grid_contenedor .imagen3 {
+    grid-area: imagen3;
+    margin: 2rem auto;
+}
+
+.grid_contenedor .texto3 {
+    grid-area: texto3;
+    margin: 5rem;
+}
+
+.grid_contenedor .imagen4 {
+    grid-area: imagen4;
+    margin: 2rem auto;
+}
+
+.grid_contenedor .texto4 {
+    grid-area: texto4;
+    margin: 5rem;
+}
+
+
+/*====================================== MEDIA QUERIES ==================*/
+
+/* === destkop === */
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: red;
+    }
+
+    .grid_contenedor {
+        grid-template-areas:
+            "texto1 imagen1"
+            "texto2 imagen2"
+            "texto3 imagen3"
+            "texto4 imagen4"
+            ;
+    }
+}
+
+
+/* === tablet === */
+@media screen and (max-width: 780px) {
+    body {
+        background-color: greenyellow;
+    }
+
+    .nav_link {
+        margin: 0 1rem;
+        padding: .2rem;
+        font-size: .7rem;
+    }
+    
+    .grid_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid__container p {
+        font-size: 1rem;
+    }
+
+}
+
+
+
+
+/* === mobile === */
+@media screen and (max-width: 425px) {
+    body {
+        background-color: blue;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .grid_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+}
