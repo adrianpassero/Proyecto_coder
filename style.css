@@ -254,7 +254,9 @@ h1 {
     border-width: 2px;
 }
 
-.contenedor_conocenos {
+.contenedor_conocenos p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
     margin: 3rem;
 }
 
