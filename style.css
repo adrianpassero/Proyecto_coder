@@ -57,8 +57,8 @@ h1 {
     transition: 1s;
 }
 
-.nav_link:hover{
-    background-color:#5c6b73
+.nav_link:hover {
+    background-color: #5c6b73
 }
 
 
@@ -70,12 +70,18 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    margin: 2rem;
+}
+
+.copyright {
+    margin: .5rem;
+    position: absolute;
+    align-items: center;
 }
 
 .footer_logo {
-    width: 3%;
-    padding: .5rem;
+    width: 30px;
+    height: 30px;
     margin: 0 .5rem;
 }
 
@@ -142,20 +148,22 @@ h1 {
 
 /*======================================== MAIN PAGINA CONTACTO =============*/
 
-.titulo_formulario{
+.titulo_formulario {
     margin: 1rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
 }
 
-.formulario{
+.formulario {
     margin: 1rem;
 }
 
-.datos_personales, .texto_usuario{
+.datos_personales,
+.texto_usuario {
     margin: .5rem;
 }
-.mensaje{
+
+.mensaje {
     border: none;
     display: flex;
     flex-direction: column;
@@ -223,14 +231,100 @@ h1 {
     margin: 5rem;
 }
 
+.video_boton {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    padding: .2rem;
+}
+
+/*====================================== CONOCENOS ==================*/
+
+.texto_conocenos {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+
+.linea{
+    border-color: yellow;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+.contenedor_conocenos {
+    margin: 3rem;
+}
+
+
+
+
+
+
+
+/*====================================== ERROR 404 ==================*/
+
+.fondo_404 {
+    background-color: white;
+}
+
+.grid_404 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        "imagen_404"
+        "texto_404"
+        "link_404";
+}
+
+.imagen_404 {
+    grid-area: imagen_404;
+    margin: 1rem auto;
+}
+
+.texto_404 {
+    grid-area: texto_404;
+    margin: 1rem auto;
+}
+
+.link_404 {
+    grid-area: link_404;
+    margin: 0.5rem auto;
+}
+
+.imagen_error_404 {
+    border-radius: 1rem;
+}
+
+.texto_error_404 {
+    text-align: center;
+    font-family: monospace;
+    font-size: .8rem;
+}
+
+
+.boton_404 {
+    font-family: monospace;
+    font-size: .8rem;
+    padding: .3rem;
+    background-color: #ffd900;
+    border-radius: 1rem;
+}
+
+
+
 
 /*====================================== MEDIA QUERIES ==================*/
 
 /* === destkop === */
 @media screen and (max-width: 1200px) {
-    body {
+    /*body {
         background-color: red;
-    }
+    }*/
 
     .grid_contenedor {
         grid-template-areas:
@@ -238,32 +332,38 @@ h1 {
             "texto2 imagen2"
             "texto3 imagen3"
             "texto4 imagen4"
-            ;
+        ;
     }
 }
 
 
 /* === tablet === */
 @media screen and (max-width: 780px) {
-    body {
+    /*body {
         background-color: greenyellow;
-    }
+    }*/
 
     .nav_link {
         margin: 0 1rem;
         padding: .2rem;
         font-size: .7rem;
     }
-    
+
     .grid_contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .grid__container p {
         font-size: 1rem;
     }
+
+    .texto_conocenos {
+        width: 100%;
+        margin: auto;
+    }
+
 
 }
 
@@ -272,9 +372,9 @@ h1 {
 
 /* === mobile === */
 @media screen and (max-width: 425px) {
-    body {
+    /*body {
         background-color: blue;
-    }
+    }*/
 
     h1 {
         font-size: 3.2rem;
@@ -286,5 +386,9 @@ h1 {
         align-items: center;
     }
 
+    .texto_conocenos {
+        width: 100%;
+        margin: auto;
+    }
 
 }
