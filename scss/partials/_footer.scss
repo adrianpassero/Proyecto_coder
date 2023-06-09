@@ -1,0 +1,22 @@
+/* ================================= FOOTER ========== */
+
+
+.copyright {
+    margin: .5rem;
+    position: absolute;
+    align-items: center;
+}
+
+.footer_contenedor {
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    a {
+        width: 30px;
+        height: 30px;
+        margin: 0 .5rem;
+    }
+}

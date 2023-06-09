@@ -1,0 +1,67 @@
+/*================================== PAG CARTA RESTO ===============*/
+
+
+.img_carta_resto {
+    width: 100%;
+}
+
+.parrafos{
+    margin: 1.8rem;
+}
+
+.promo_especial {
+    text-align: center;
+    padding: 2rem;
+    color: $color-white;
+}
+
+.contenedor_promo {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+
+.menu {
+    background-color: $color-white;
+    width: 20rem;
+    padding: 1rem;
+    border-style: solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-family: unset;
+
+}
+
+.precio_boton{
+    margin: .5rem;
+}
+
+.menu img {
+    width: 100%;
+}
+
+.menu h3 {
+    text-align: center;
+}
+
+.carta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_boton {
+    color: $color-black;
+    background-color: steelblue;
+    border-radius: 10px;
+    padding: .2rem;
+}
+
+.contenedor_comprar {
+    padding: 0 1rem;
+}

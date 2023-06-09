@@ -1,0 +1,50 @@
+/*====================================== ERROR 404 ==================*/
+
+.fondo_404 {
+    background-color: $color-white;
+}
+
+.grid_404 {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas:
+        "imagen_404"
+        "texto_404"
+        "link_404";
+}
+
+.imagen_404 {
+    grid-area: imagen_404;
+    margin: 1rem auto;
+}
+
+.texto_404 {
+    grid-area: texto_404;
+    margin: 1rem auto;
+}
+
+.link_404 {
+    grid-area: link_404;
+    margin: 0.5rem auto;
+}
+
+.imagen_error_404 {
+    border-radius: 1rem;
+}
+
+.texto_error_404 {
+    text-align: center;
+    font-family: monospace;
+    font-size: .8rem;
+}
+
+
+.boton_404 {
+    font-family: monospace;
+    font-size: .8rem;
+    padding: .3rem;
+    background-color: #ffd900;
+    border-radius: 1rem;
+}

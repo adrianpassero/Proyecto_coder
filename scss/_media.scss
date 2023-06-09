@@ -1,0 +1,72 @@
+/*====================================== MEDIA QUERIES ==================*/
+
+/* === destkop === */
+@media screen and (max-width: 1200px) {
+    /*body {
+        background-color: red;
+    }*/
+
+    .grid_contenedor {
+        grid-template-areas:
+            "texto1 imagen1"
+            "texto2 imagen2"
+            "texto3 imagen3"
+            "texto4 imagen4"
+        ;
+    }
+}
+
+
+/* === tablet === */
+@media screen and (max-width: 780px) {
+    /*body {
+        background-color: greenyellow;
+    }*/
+
+    .nav_link {
+        margin: 0 1rem;
+        padding: .2rem;
+        font-size: .7rem;
+    }
+
+    .grid_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid__container p {
+        font-size: 1rem;
+    }
+
+    .texto_conocenos {
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+
+
+/* === mobile === */
+@media screen and (max-width: 425px) {
+    /*body {
+        background-color: blue;
+    }*/
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .grid_contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto_conocenos {
+        width: 100%;
+        margin: auto;
+    }
+
+}

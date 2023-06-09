@@ -1,0 +1,57 @@
+/*==================================== GLOBAL ======================*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    background-color: $color-black;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: $color-black;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Exo', sans-serif;
+    font-size: 4.5rem;
+    color: $color-white;
+    margin: 1rem;
+}
+
+.nav_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_contenedor {
+    padding: .2rem;
+}
+
+.nav_link {
+    margin: 0 1rem;
+    padding: .2rem;
+    font-size: 1rem;
+    background-color: $color-white;
+    border-radius: 1rem;
+    transition: 1s;
+}
+
+.nav_link:hover {
+    background-color: #5c6b73
+}

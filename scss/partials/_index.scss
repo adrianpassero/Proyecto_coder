@@ -1,0 +1,21 @@
+.contenedor_carrusel{
+    width: 80%;
+    margin:auto;
+}
+
+.contenedor_carrusel img {
+    border-radius: .5rem;
+}
+
+.contenedor_carrusel h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:$color-black;
+    text-align: center;
+    background: radial-gradient(circle, rgba(154,154,164,1) 0%, rgba(77,94,111,0.8141631652661064) 46%);
+    border-radius: .2rem;
+}
